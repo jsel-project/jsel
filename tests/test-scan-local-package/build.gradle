@@ -1,0 +1,9 @@
+apply plugin: "java-library"
+
+group "techmoc"
+version ""
+
+dependencies {
+    implementation project(":plugin-library")
+    implementation project(":test-scan-local-package-jar")
+}

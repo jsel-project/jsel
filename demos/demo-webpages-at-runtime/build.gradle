@@ -1,0 +1,15 @@
+apply plugin: "application"
+
+group "techmoc"
+version ""
+
+mainClassName = "techmoc.extensibility.demos.Application"
+
+dependencies {
+    implementation project(":plugin-library")
+    implementation project(":demo-webpages-at-runtime-plugin-interfaces")
+    
+    implementation "com.sparkjava:spark-core"
+    implementation "org.apache.logging.log4j:log4j-slf4j-impl"
+    implementation "org.apache.logging.log4j:log4j-core"
+}

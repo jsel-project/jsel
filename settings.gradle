@@ -1,0 +1,66 @@
+rootProject.name = "extensibility-techmoc"
+
+// Dynamic Map
+include "polymorphic-map"
+
+// Plugin Library.
+include "plugin-library"
+
+
+//========== DEMOS ==========
+
+// Use this template to start your own demo project!
+include "demo-template"
+project(":demo-template").projectDir = file("demos/demo-template")
+
+// Polymorphic map simulation.
+include "demo-polymap-simulation"
+project(":demo-polymap-simulation").projectDir = file("demos/demo-polymap-simulation")
+
+// Extremely simple two-plugin, command-line demo.
+include "demo-simple-math"
+project(":demo-simple-math").projectDir = file("demos/demo-simple-math")
+
+// Adds new web pages at runtime.
+include "demo-webpages-at-runtime"
+project(":demo-webpages-at-runtime").projectDir = file("demos/demo-webpages-at-runtime")
+
+// Interfaces for the webpages-at-runtime-demo.
+include "demo-webpages-at-runtime-plugin-interfaces"
+project(":demo-webpages-at-runtime-plugin-interfaces").projectDir = file("demos/demo-webpages-at-runtime-plugin-interfaces")
+
+// Cat Plugin for the webpages-at-runtime-demo.
+include "demo-webpages-at-runtime-cat-plugin"
+project(":demo-webpages-at-runtime-cat-plugin").projectDir = file("demos/demo-webpages-at-runtime-cat-plugin")
+
+// Dog Plugin for the webpages-at-runtime-demo.
+include "demo-webpages-at-runtime-dog-plugin"
+project(":demo-webpages-at-runtime-dog-plugin").projectDir = file("demos/demo-webpages-at-runtime-dog-plugin")
+
+// Json Plugin for the webpages-at-runtime-demo.
+include "demo-webpages-at-runtime-json-plugin"
+project(":demo-webpages-at-runtime-json-plugin").projectDir = file("demos/demo-webpages-at-runtime-json-plugin")
+
+// Json Plugin for the webpages-at-runtime-demo.
+include "demo-webpages-at-runtime-printers-plugin"
+project(":demo-webpages-at-runtime-printers-plugin").projectDir = file("demos/demo-webpages-at-runtime-printers-plugin")
+
+//========== TEST PROJECTS ==========
+
+include "test-interfaces"
+project(":test-interfaces").projectDir = file("tests/test-interfaces")
+
+include "test-package-directory-plugins"
+project(":test-package-directory-plugins").projectDir = file("tests/test-package-directory-plugins")
+
+include "test-plugins"
+project(":test-plugins").projectDir = file("tests/test-plugins")
+
+include "test-plugins-nested-packages"
+project(":test-plugins-nested-packages").projectDir = file("tests/test-plugins-nested-packages")
+
+include "test-scan-local-package"
+project(":test-scan-local-package").projectDir = file("tests/test-scan-local-package")
+
+include "test-scan-local-package-jar"
+project(":test-scan-local-package-jar").projectDir = file("tests/test-scan-local-package-jar")

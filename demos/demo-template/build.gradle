@@ -1,0 +1,10 @@
+apply plugin: "application"
+
+group "techmoc"
+version ""
+
+mainClassName = "techmoc.extensibility.demos.Application"
+
+dependencies {
+    implementation project(":plugin-library")
+}

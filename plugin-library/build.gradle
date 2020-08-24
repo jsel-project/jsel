@@ -1,0 +1,9 @@
+apply plugin: "java-library"
+
+dependencies {
+    api project(":polymorphic-map")
+    
+    testImplementation project(":test-interfaces")
+
+    testImplementation "commons-io:commons-io"
+}
